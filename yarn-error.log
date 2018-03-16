@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add --dev babel-cli babel-node flow-bin babel-preset-es2015 babel-preset-flow
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.4.0
+
+Node version: 
+  8.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "jswithtype",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: /Users/Me/A/jswithtype/node_modules/babel-node: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c node message.js; sleep 10; exit 1;
+  Directory: /Users/Me/A/jswithtype/node_modules/babel-node
+  Output:
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  |                         Hello there [34mundefined[39m 😛                           [0m│
+  |[39m          You tried to install babel-node. This is not babel-node 🚫          [0m│
+  |[39m               You should [34mnpm install -g babel-cli[39m instead 💁 .               [0m│
+  |[39m    I took this module to prevent somebody from pushing malicious code. 🕵    [0m│
+  |[39m                    Be careful out there, [34mundefined[39m! 👍                     [0m│
+  └─────────────────────────────────────────────────────────────────────────────┘
+      at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30822:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
