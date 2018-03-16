@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add babel-preset-flowtype
+  /usr/local/bin/node /usr/local/bin/yarn flowtest
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -21,7 +21,7 @@ npm manifest:
       "main": "src/index.js",
       "scripts": {
           "start": "babel-node src/index.js",
-          "test": "echo \"Error: no test specified\" && exit 1"
+          "flowtest": "flow src/index.js"
       },
       "keywords": [],
       "author": "",
@@ -2280,11 +2280,17 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
 
 Trace: 
-  Error: Couldn't find package "babel-preset-flowtype" on the "npm" registry.
-      at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
-      at NpmResolver.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:50354:15)
-      at Generator.next (<anonymous>)
-      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
-      at <anonymous>
-      at process._tickCallback (internal/process/next_tick.js:188:7)
+  Error: Command failed.
+  Exit code: 2
+  Command: sh
+  Arguments: -c flow src/index.js
+  Directory: /Users/Me/A/jswithtype
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30822:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)

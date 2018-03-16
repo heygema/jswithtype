@@ -5,8 +5,21 @@ yarn
 yarn start
 ```
 
+or
+
+```
+npm install
+npm run start
+```
+
 ## to test flow
 
 ```
-flow src/index.js
+yarn flowtest
+```
+
+or
+
+```
+npm run flowtest
 ```
